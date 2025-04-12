@@ -9,7 +9,7 @@ int main()
         int roll;
         float marks;
         char grade;
-    } a,b;
+    } a;
 
     struct student c,d;
 
@@ -18,11 +18,8 @@ int main()
     a.marks=85.45;
     a.grade='A';
 
-    strcpy(b.name, "Khalid Mahmud");
-    b.roll=37;
-    b.marks=59.55;
-    b.grade='C';
-
+    struct student b={"Khalid Mahmud", 37, 59.55, 'C'};
+    
     strcpy(c.name, "Rushdul Hamid");
     c.roll=45;
     c.marks=78.20;
